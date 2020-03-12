@@ -1,0 +1,14 @@
+.heading {
+    font-size: larger;
+    font-weight: bolder;
+    background-color: bisque;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 2vw;
+}
+
+.menu-button {
+    float: right;
+}
