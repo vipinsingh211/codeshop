@@ -9,12 +9,12 @@ import { HeaderComponent } from './header/header.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { HomeComponent } from './home/home.component';
 import { StoreComponent } from './store/store.component';
+import { TemplatesComponent } from './templates/templates.component';
+import { ReferencesComponent } from './references/references.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './footer/footer.component';
 
 
-const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'store', component: StoreComponent }
-];
 
 @NgModule({
   declarations: [
@@ -22,16 +22,16 @@ const appRoutes: Routes = [
     HeaderComponent,
     CarouselComponent,
     HomeComponent,
-    StoreComponent
+    StoreComponent,
+    TemplatesComponent,
+    ReferencesComponent,
+    FooterComponent
   ],
   imports: [
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true}
-    ),
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
