@@ -1,1 +1,26 @@
-<p>templates works!</p>
+<br />
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Go</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+
+<span *ngFor="let category of categoryTypes">
+    <br>
+    <h4>{{category}}</h4><br>
+    <div class="row" >
+        <div class="col-sm-3" *ngFor="let items of categories[category]">
+            <h5>{{items.name}}</h5>
+            <img src="{{items.previewImage}}" class="img-thumbnail" alt="Cinque Terre">
+            <p>{{items.price}}</p>
+            <button class="btn btn-primary">Add to basket</button>
+        </div>
+    </div>
+</span>
