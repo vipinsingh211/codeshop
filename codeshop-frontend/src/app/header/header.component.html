@@ -1,25 +1,28 @@
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <!-- Brand -->
     <a class="navbar-brand" routerLink="/">CodeShop</a>
-  
+
     <!-- Links -->
     <ul class="navbar-nav">
-      <!-- <li class="nav-item">
+        <!-- <li class="nav-item">
         <a class="nav-link" href="#">Link 1</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Link 2</a>
       </li> -->
-  
-      <!-- Dropdown -->
-      <li ngbDropdown class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbardrop" ngbDropdownToggle>
-          Dropdown link
-        </a>
-        <div ngbDropdownMenu class="dropdown-menu">
-          <a ngbDropdownItem class="dropdown-item" routerLink="/templates">Templates</a>
-          <a ngbDropdownItem class="dropdown-item" routerLink="/references">References</a>
-        </div>
-      </li>
+
+        <!-- Dropdown -->
+        <li ngbDropdown class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbardrop" ngbDropdownToggle>
+                Dropdown link
+            </a>
+            <div ngbDropdownMenu class="dropdown-menu">
+                <a ngbDropdownItem class="dropdown-item" routerLink="/templates">Templates</a>
+                <a ngbDropdownItem class="dropdown-item" routerLink="/references">References</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/signup">Register</a>
+        </li>
     </ul>
 </nav>

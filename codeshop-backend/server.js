@@ -30,6 +30,7 @@ app.use(bodyParser.json())
 
 app.post('/register', (req, res) => {
     let email, password, role;
+    console.log(req.body);
     
     if (validator.is_valid_email(req.body.email)) {
         email = req.body.email;
@@ -43,7 +44,6 @@ app.post('/register', (req, res) => {
         throw 'Invalid input';
     }
     
-    const password = req.body.password;
     if ('role' in req.body) {
         role = validator.is_valid_role(req.body.role);
         if (!role) { throw 'Invalid input'; }
@@ -51,7 +51,7 @@ app.post('/register', (req, res) => {
         role = 'user';
     }
 
-    query = `INSERT INTO users (email, password, role, active) values ('${email}', '${password}', 'user', true)`;
+    query = `INSERT INTO users (email, password, role, active) VALUES ('${email}', '${password}', 'user', true)`;
     con.query(query, (err, result) => {
         if (err) throw 'Failed to register!';
         res.send('Successfully registered!');

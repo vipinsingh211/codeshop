@@ -5,13 +5,15 @@ import { StoreComponent } from './store/store.component';
 import { ReferencesComponent } from './references/references.component';
 import { TemplatesComponent } from './templates/templates.component';
 import { faFileCode } from '@fortawesome/free-solid-svg-icons';
+import { RegistrationComponent } from './registration/registration.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'store', component: StoreComponent },
   { path: 'references', component: ReferencesComponent },
-  { path: 'templates', component: TemplatesComponent }
+  { path: 'templates', component: TemplatesComponent },
+  { path: 'signup', component: RegistrationComponent }
 ];
 
 @NgModule({
