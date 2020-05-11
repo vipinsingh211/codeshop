@@ -6,6 +6,7 @@ import { ReferencesComponent } from './references/references.component';
 import { TemplatesComponent } from './templates/templates.component';
 import { faFileCode } from '@fortawesome/free-solid-svg-icons';
 import { RegistrationComponent } from './registration/registration.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'store', component: StoreComponent },
   { path: 'references', component: ReferencesComponent },
   { path: 'templates', component: TemplatesComponent },
-  { path: 'signup', component: RegistrationComponent }
+  { path: 'signup', component: RegistrationComponent },
+  { path: 'signin', component: LoginComponent }
 ];
 
 @NgModule({
